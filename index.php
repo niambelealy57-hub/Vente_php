@@ -13,10 +13,6 @@
     <a href="pages/produits.php" class="btn btn-primary">Produits</a>
     <a href="pages/categories.php" class="btn btn-success">Catégories</a>
 </div>
-<a href="pages/categories.php" class="btn btn-success mt-2">Catégories</a>
-<a href="add_categorie.php" class="btn btn-success">+ Ajouter Catégorie</a>
-<select name="categorie">
-    <option value="">Toutes les catégories</option>
 
     <?php
     $cat = mysqli_query($conn, "SELECT * FROM categorie");

@@ -4,6 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Produits</title>
+<a href="categories.php" class="btn btn-light mb-3">📂 Catégories</a>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="../assets/js/script.js" defer></script>
@@ -58,11 +59,17 @@ h2 {
         </div>
 
         <div class="col-md-6">
-            <select id="categoryFilter" class="form-control">
-                <option value="">Toutes les catégories</option>
-                <option value="sucrerie">Sucrerie</option>
-                <option value="alcool">Alcool</option>
-            </select>
+        <select id="categoryFilter" class="form-control">
+            <option value="">Toutes les catégories</option>
+
+                <?php
+                    $cats = $conn->query("SELECT * FROM categories");
+                    while($c = $cats->fetch_assoc()){
+                    echo "<option value='".strtolower($c['label'])."'>".$c['label']."</option>";
+                    }
+                ?>
+
+        </select>
         </div>
     </div>
 </div>
