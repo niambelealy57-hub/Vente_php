@@ -48,14 +48,14 @@ h2 {
 <!-- HEADER -->
 <div class="text-center mb-4">
     <h2>🛒 Gestion des Produits</h2>
-    <p class="text-light">Application moderne de gestion</p>
+    <p class="text-light">Application Web moderne de gestion</p>
 </div>
 
 <!-- FILTRES -->
 <div class="card p-3 mb-4">
     <div class="row">
         <div class="col-md-6">
-            <input type="text" id="search" class="form-control" placeholder="🔍 Rechercher produit...">
+            <input type="text" id="search" class="form-control" placeholder="🔍 Rechercher Produit...">
         </div>
 
         <div class="col-md-6">
@@ -85,7 +85,7 @@ h2 {
 <tr>
 <th>Nom</th>
 <th>Description</th>
-<th>Qté</th>
+<th>Quantité</th>
 <th>Prix</th>
 <th>Catégorie</th>
 <th>Actions</th>
